@@ -1,106 +1,64 @@
-# Smart-indoor-farming-monitoring-system-
-Utilizes IoT technology to remotely track and manage environmental conditions within an indoor farming setup, like a vertical farm
+🌱 Smart Indoor Farming Monitoring System
+An IoT-powered solution for real-time monitoring and automation of environmental conditions in indoor agriculture setups — including vertical farms, greenhouses, and hydroponic systems.
+📝 Project Overview
+The Smart Indoor Farming Monitoring System enables farmers, researchers, and hobbyists to remotely track and manage key environmental parameters. It uses sensors and microcontrollers to collect data, transmit it to the cloud, and visualize it on an interactive dashboard. The system can also automate responses like activating fans, lights, or irrigation pumps based on predefined thresholds.
+🚀 Key Features
+🌡️ Real-Time Environmental Monitoring
+- Temperature, humidity, light intensity, soil moisture, water level, and CO₂ levels
+- Live sensor readings via dashboard
+⚙️ Automated Control System (Optional)
+- Auto-switching fans, lights, and water pumps
+- Relay modules triggered by sensor thresholds
+📊 Web/Mobile Dashboard
+- Interactive UI with graphs and alerts
+- Remote access via internet
+📁 Data Logging & Analysis
+- Historical data storage and visualization
+- Export reports in CSV/PDF formats
+🔔 Alert System
+- Push notifications when parameters exceed safe thresholds
+🧩 Multi-Zone Support
+- Monitor and control multiple grow zones independently
+🔌 Power & Connectivity Monitoring
+- Status of power, internet connection, and system faults
+🧱 Tech Stack
+🖧 Hardware (IoT)
+- Microcontroller: ESP32
+- Sensors:
+- DHT11 – Temperature & Humidity
+- LDR or BH1750 – Light Intensity
+- Soil Moisture Sensor
+- MQ135 – CO₂ Sensor
+- Ultrasonic Sensor – Water Level
+- Actuators: Relays, motors, LED grow lights, irrigation pumps
+🧑‍💻 Software
+- Embedded Programming:
+- Language: C++ (Arduino IDE)
+- Libraries: Adafruit Sensor, Wire, PubSubClient (MQTT)
+- Backend:
+- Language: Python (Flask)
+- Database: MySQL
+- Protocol: MQTT for real-time updates
+- Frontend:
+- Web App: React.js
+- Cloud & Hosting:
+- Platform: Firebase
+- MQTT Broker: Mosquitto
+- Notifications: Firebase Cloud Messaging
+🔒 Security Measures
+- Secure WiFi communication via HTTPS
+- Sensor data validation and access control
+- Admin authentication for device and user management
+✅ Benefits
+- Reduces manual monitoring and labor
+- Optimizes crop yield through precise control
+- Enables data-driven farming decisions
+- Conserves water and energy via automation
+- Supports remote monitoring — ideal for urban or space-limited setups.
 
-📝 Project Description:
-The Smart Indoor Farming Monitoring System is an IoT-powered solution that enables real-time monitoring and automation of environmental conditions for indoor agriculture. It is designed to assist farmers, researchers, or hobbyists in growing crops efficiently in controlled environments such as greenhouses, vertical farms, or hydroponic setups.
 
-The system collects real-time data on key factors like temperature, humidity, soil moisture, light intensity, and CO₂ levels using sensors. This data is then transmitted to a cloud/server through a microcontroller, and displayed on a web or mobile dashboard. The system can trigger alerts or automate responses like turning on fans, lights, or irrigation systems based on pre-defined thresholds.
 
-🚀 Key Features:
-Real-time Environmental Monitoring
 
-Temperature, humidity, light intensity, soil moisture, water level, and CO₂ monitoring
 
-Live sensor readings
 
-Automated Control System (Optional)
 
-Auto-switching fans, lights, or water pumps
-
-Relay modules controlled by logic or thresholds
-
-Web/Mobile Dashboard
-
-Interactive UI with graphs and alerts
-
-Access from anywhere via the internet
-
-Data Logging & Analysis
-
-Store and visualize sensor data trends
-
-Export historical reports (CSV/PDF)
-
-Alert System
-
-Email/SMS/Push notifications when parameters are out of range
-
-Multi-Zone Support
-
-Monitor and control multiple grow zones independently
-
-Power & Connectivity Monitoring
-
-Status of power, internet connection, or system faults
-
-🧱 Tech Stack:
-🖧 Hardware (IoT):
-Microcontroller: Arduino Uno / ESP32 / Raspberry Pi
-
-Sensors:
-
-DHT11/DHT22 – Temperature & Humidity
-
-LDR or BH1750 – Light Intensity
-
-Soil Moisture Sensor
-
-MQ135 – CO₂ Sensor (optional)
-
-Ultrasonic Sensor – Water level (optional)
-
-Actuators: Relays, motors, LED grow lights, irrigation pumps
-
-🧑‍💻 Software:
-Embedded Programming:
-Language: C++ (Arduino IDE), Python (Raspberry Pi)
-
-Libraries: Adafruit Sensor, Wire, PubSubClient (for MQTT)
-
-Backend:
-Language: Python (Flask/Django) or Node.js (Express)
-
-Database: Firebase Realtime DB / MongoDB / MySQL
-
-APIs: RESTful APIs or MQTT Protocol for real-time sensor updates
-
-Frontend:
-Web App: React.js / Vue.js / HTML + CSS + Chart.js
-
-Mobile App (Optional): Flutter / React Native
-
-Cloud & Hosting:
-Platform: AWS / Firebase / Heroku / Thingspeak / Google Cloud
-
-Realtime Communication: MQTT Broker (Mosquitto) / WebSockets
-
-Notifications:
-Services: Twilio (SMS), Firebase Cloud Messaging (Push), Email via SMTP
-
-🔒 Security Measures:
-Secure WiFi communication using HTTPS / TLS
-
-Sensor data validation and access control
-
-Admin authentication for device and user management
-
-✅ Benefits:
-Minimizes manual monitoring and reduces labor
-
-Optimizes crop yield through precise environmental control
-
-Enables data-driven farming decisions
-
-Reduces water and energy usage through automation
-
-Allows remote monitoring — especially useful in urban or space-limited setups
