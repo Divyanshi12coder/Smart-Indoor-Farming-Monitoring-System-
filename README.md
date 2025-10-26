@@ -41,30 +41,45 @@ The Smart Indoor Farming Monitoring System enables farmers, researchers, and hob
 
 
 🧱 Tech Stack
+
 🖧 Hardware (IoT)
 - Microcontroller: ESP32
+
 - Sensors:
 - DHT11 – Temperature & Humidity
+
 - LDR or BH1750 – Light Intensity
+
 - Soil Moisture Sensor
+
 - MQ135 – CO₂ Sensor
+
 - Ultrasonic Sensor – Water Level
+
 - Actuators: Relays, motors, LED grow lights, irrigation pumps
 
 
 🧑‍💻 Software
 - Embedded Programming:
 - Language: C++ (Arduino IDE)
+
 - Libraries: Adafruit Sensor, Wire, PubSubClient (MQTT)
+
 - Backend:
 - Language: Python (Flask)
+
 - Database: MySQL
+
 - Protocol: MQTT for real-time updates
+
 - Frontend:
 - Web App: React.js
+
 - Cloud & Hosting:
 - Platform: Firebase
+
 - MQTT Broker: Mosquitto
+
 - Notifications: Firebase Cloud Messaging
 
 
