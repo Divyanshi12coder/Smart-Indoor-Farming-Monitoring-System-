@@ -1,0 +1,36 @@
+import React, { useEffect, useState } from 'react';
+import { getDevices, controlDevice } from './api';
+import DeviceCard from './components/DeviceCard';
+import SensorChart from './components/SensorChart';
+import EnergyChart from './components/EnergyChart';
+
+function App() {
+  const [devices, setDevices] = useState([]);
+  const [sensorData, setSensorData] = useState({});
+  const [energyData, setEnergyData] = useState({});
+
+  useEffect(() => {
+    getDevices().then(res => {
+      setDevices(res.data.devices);
+      setSensorData(res.data.sensors);
+      setEnergyData(res.data.energy);
+    });
+  }, []);
+
+  const handleControl = (id, action) => {
+    controlDevice(id, action);
+  };
+
+  return (
+    <div>
+      <h1>Smart Home Dashboard</h1>
+      {devices.map(d => (
+        <DeviceCard key={d.id} device={d} onControl={handleControl} />
+      ))}
+      <SensorChart data={sensorData.temperature} />
+      <EnergyChart usage={energyData} />
+    </div>
+  );
+}
+
+export default App;
